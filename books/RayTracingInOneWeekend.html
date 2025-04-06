@@ -2010,7 +2010,7 @@ as desired with the following code snippet, added to `rtweekend.h`:
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ C++ highlight
     inline double random_double() {
         // Returns a random real in [0,1).
-        return std::rand() / (RAND_MAX + 1.0);
+        return double(std::rand()) / (RAND_MAX + 1.0);
     }
 
     inline double random_double(double min, double max) {
